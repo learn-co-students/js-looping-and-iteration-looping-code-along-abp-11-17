@@ -6,13 +6,14 @@ function printBadges(arr) {
   return arr;
 }
 
-
-let count = 0;
-let coin = Math.random();
+function coinToss() {
+  return Math.random() >= 0.5;
+}
 
 function tailsNeverFails() {
-  while ( coin >= 0.5) {
-    
-    count++
+  let counter = 0;
+  while (coinToss()) {
+    counter++;
+  }
+  return `You got ${counter} tails in a row!`;
 }
-return `You got ${count} tails in a row!`;
