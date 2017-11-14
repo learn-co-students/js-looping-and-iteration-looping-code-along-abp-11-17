@@ -11,14 +11,10 @@ printBadges(employee);
 
 
 
-
-let tails= []
-
 function tailsNeverFails() {
-    return Math.random() >=0.5;
-     tails.push[tails]
+    let tails = 0;
+    while (Math.random() >= 0.5) {
+      tails++
+    };
+    return `You got ${tails} tails in a row!`;
 }
-
-//while (tailsNeverFails) {
-
-  //console.log (`You got ${i+1} tails in a row!`)
