@@ -134,7 +134,10 @@ function maybeTrue () {
   return Math.random() >= 0.5;
 }
 
+
 while (maybeTrue()) {
+  let i = 0;
+  i++;
   console.log('And I ran... I ran so far away!');
 }
 ```
