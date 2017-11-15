@@ -8,10 +8,15 @@ function printBadges (name){
 }
 printBadges(['Joe', 'Gabe']);
 
-function tailsNeverFails() {
-  return Math.random() <= 1;
+function coinToss() {
+  return Math.random() >= 0.5;
 }
 
-while (tailsNeverFails()) {
-    console.log('You got 8 tails in a row!');
+function tailsNeverFails(){
+  let counter = 0;
+  while(coinToss()){
+    counter++
+  }
+  return `You got ${counter} tails in a row!`
 }
+ailsNeverFails();
